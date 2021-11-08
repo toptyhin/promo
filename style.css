@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    section {
+      @apply w-full relative;
+    }
+    section.separator, section.separator .container {
+      @apply flex flex-grow place-content-center place-items-center;
+    }
+    .thinlist li {
+      @apply p-0.5 font-light
+    }
+
+}
+
+h1,h2,h3,h4,p,li {
+  font-family: 'Oswald', sans-serif;
+  color:#475187;
+}
+
+.highlited {
+  color: #be5b15;
+}
+
+body {
+  background-color: #eff1fa;
+}
+section.separator {
+  background-color: #e8ebf5;
+  height:90px;
+}
+
+#cards {
+  background: linear-gradient(180deg, rgba(239,241,250,1) 90%, rgba(255,255,255,1) 100%);
+}
+
+#footer {
+  background-color: #e8ebf5;
+}
+
+.opacity-99 {opacity: 0.99;}
+.bubble {
+  position: absolute;
+  width: 0;
+  height: 0;
+  /* bottom: -240px; */
+  /* left: -60px; */
+  border-radius: 0;
+  background-color: #e8ebf5;
+  transition: all 2s ease-in-out;
+}
+
+.overflow-visible .bubble {z-index: 1;}
+
+.bubble.dark {
+  background: radial-gradient(circle,#eff1fa, #e4e7f6);
+}
+.bubble.white {
+  background-color: #ffffff;
+}
+.bvambient_particle
+  {
+    position: absolute;
+    pointer-events: none;
+    transition: top linear, left linear;
+
+  }
