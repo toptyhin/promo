@@ -48,26 +48,12 @@ Sections
 Remove the margin in all browsers.
 */
 
-body {
-  margin: 0;
-}
+
 
 /**
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 
-body {
-  font-family:
-		system-ui,
-		-apple-system, /* Firefox supports this but not yet `system-ui` */
-		'Segoe UI',
-		Roboto,
-		Helvetica,
-		Arial,
-		sans-serif,
-		'Apple Color Emoji',
-		'Segoe UI Emoji';
-}
 
 /*
 Grouping content
@@ -185,20 +171,6 @@ Forms
 2. Remove the margin in Firefox and Safari.
 */
 
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-}
 
 /**
 Remove the inheritance of text transform in Edge and Firefox.
@@ -328,26 +300,8 @@ summary {
  * Removes the default spacing and border for appropriate elements.
  */
 
-blockquote,
-dl,
-dd,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-figure,
-p,
-pre {
-  margin: 0;
-}
 
-button {
-  background-color: transparent;
-  background-image: none;
-}
+
 
 fieldset {
   margin: 0;
@@ -372,22 +326,14 @@ ul {
  *    to override it to ensure consistency even when using the default theme.
  */
 
-html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  /* 1 */
-  line-height: 1.5;
-  /* 2 */
-}
+
 
 /**
  * Inherit font-family and line-height from `html` so users can set them as
  * a class directly on the `html` element.
  */
 
-body {
-  font-family: inherit;
-  line-height: inherit;
-}
+
 
 /**
  * 1. Prevent padding and border from affecting element width.
@@ -491,25 +437,13 @@ table {
   border-collapse: collapse;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
+
 
 /**
  * Reset links to optimize for opt-in styling instead of
  * opt-out.
  */
 
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
 
 /**
  * Reset form element properties that are easy to forget to
@@ -519,15 +453,6 @@ a {
  * normalize.css.
  */
 
-button,
-input,
-optgroup,
-select,
-textarea {
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
-}
 
 /**
  * Use the configured 'mono' font family for elements that
@@ -652,21 +577,16 @@ video {
   }
 }
 
-section {
+#cards {
   position: relative;
   width: 100%;
 }
 
-section.separator, section.separator .container {
+#cards.separator, #cards.separator #cards .container {
   display: flex;
   flex-grow: 1;
   place-content: center;
   place-items: center;
-}
-
-.thinlist li {
-  padding: 0.125rem;
-  font-weight: 300;
 }
 
 .relative {
@@ -716,6 +636,14 @@ section.separator, section.separator .container {
   margin-top: 2.5rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -734,14 +662,6 @@ section.separator, section.separator .container {
 
 .ml-4 {
   margin-left: 1rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .flex {
@@ -772,20 +692,12 @@ section.separator, section.separator .container {
   width: 66.666667%;
 }
 
-.w-60 {
-  width: 15rem;
-}
-
-.w-1\/6 {
-  width: 16.666667%;
+.w-40 {
+  width: 10rem;
 }
 
 .w-1\/4 {
   width: 25%;
-}
-
-.w-40 {
-  width: 10rem;
 }
 
 .flex-grow {
@@ -925,11 +837,6 @@ section.separator, section.separator .container {
   line-height: 2rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .font-light {
   font-weight: 300;
 }
@@ -971,7 +878,7 @@ section.separator, section.separator .container {
   filter: var(--tw-filter);
 }
 
-h1,h2,h3,h4,p,li {
+#cards h1,#cards h2,#cards h3,#cards h4,#cards p,#cards li {
   font-family: 'Oswald', sans-serif;
   color:#475187;
 }
@@ -980,21 +887,8 @@ h1,h2,h3,h4,p,li {
   color: #be5b15;
 }
 
-body {
-  background-color: #eff1fa;
-}
-
-section.separator {
-  background-color: #e8ebf5;
-  height:90px;
-}
-
 #cards {
   background: linear-gradient(180deg, rgba(239,241,250,1) 90%, rgba(255,255,255,1) 100%);
-}
-
-#footer {
-  background-color: #e8ebf5;
 }
 
 .opacity-99 {
@@ -1022,13 +916,6 @@ section.separator {
 
 .bubble.white {
   background-color: #ffffff;
-}
-
-.bvambient_particle
-  {
-  position: absolute;
-  pointer-events: none;
-  transition: top linear, left linear;
 }
 
 @media (min-width: 1024px) {
@@ -1082,19 +969,19 @@ section.separator {
     }
   }
 
-  section.xl\:separator, section.separator .xl\:container {
+  #cards.xl\:separator, #cards.separator #cards .xl\:container {
     display: flex;
   }
 
-  section.xl\:separator, section.separator .xl\:container {
+  #cards.xl\:separator, #cards.separator #cards .xl\:container {
     flex-grow: 1;
   }
 
-  section.xl\:separator, section.separator .xl\:container {
+  #cards.xl\:separator, #cards.separator #cards .xl\:container {
     place-content: center;
   }
 
-  section.xl\:separator, section.separator .xl\:container {
+  #cards.xl\:separator, #cards.separator #cards .xl\:container {
     place-items: center;
   }
 
@@ -1136,14 +1023,6 @@ section.separator {
     margin-right: 10rem;
   }
 
-  .xl\:mr-4 {
-    margin-right: 1rem;
-  }
-
-  .xl\:ml-4 {
-    margin-left: 1rem;
-  }
-
   .xl\:grid {
     display: grid;
   }
@@ -1172,12 +1051,12 @@ section.separator {
     width: 33.333333%;
   }
 
-  .xl\:w-1\/6 {
-    width: 16.666667%;
-  }
-
   .xl\:w-60 {
     width: 15rem;
+  }
+
+  .xl\:w-1\/6 {
+    width: 16.666667%;
   }
 
   .xl\:flex-grow {

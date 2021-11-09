@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    #cards {
+      @apply w-full relative;
+    }
+    #cards.separator, #cards.separator #cards .container {
+      @apply flex flex-grow place-content-center place-items-center;
+    }
+}
+
+#cards h1,#cards h2,#cards h3,#cards h4,#cards p,#cards li {
+  font-family: 'Oswald', sans-serif;
+  color:#475187;
+}
+
+.highlited {
+  color: #be5b15;
+}
+
+#cards {
+  background: linear-gradient(180deg, rgba(239,241,250,1) 90%, rgba(255,255,255,1) 100%);
+}
+
+.opacity-99 {opacity: 0.99;}
+.bubble {
+  position: absolute;
+  width: 0;
+  height: 0;
+  /* bottom: -240px; */
+  /* left: -60px; */
+  border-radius: 0;
+  background-color: #e8ebf5;
+  transition: all 2s ease-in-out;
+}
+
+.overflow-visible .bubble {z-index: 1;}
+
+.bubble.dark {
+  background: radial-gradient(circle,#eff1fa, #e4e7f6);
+}
+.bubble.white {
+  background-color: #ffffff;
+}
