@@ -716,6 +716,14 @@ section.separator, section.separator .container {
   margin-top: 2.5rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -734,14 +742,6 @@ section.separator, section.separator .container {
 
 .ml-4 {
   margin-left: 1rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .flex {
@@ -772,20 +772,12 @@ section.separator, section.separator .container {
   width: 66.666667%;
 }
 
-.w-60 {
-  width: 15rem;
-}
-
-.w-1\/6 {
-  width: 16.666667%;
+.w-40 {
+  width: 10rem;
 }
 
 .w-1\/4 {
   width: 25%;
-}
-
-.w-40 {
-  width: 10rem;
 }
 
 .flex-grow {
@@ -923,11 +915,6 @@ section.separator, section.separator .container {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
 }
 
 .font-light {
@@ -1136,14 +1123,6 @@ section.separator {
     margin-right: 10rem;
   }
 
-  .xl\:mr-4 {
-    margin-right: 1rem;
-  }
-
-  .xl\:ml-4 {
-    margin-left: 1rem;
-  }
-
   .xl\:grid {
     display: grid;
   }
@@ -1172,12 +1151,12 @@ section.separator {
     width: 33.333333%;
   }
 
-  .xl\:w-1\/6 {
-    width: 16.666667%;
-  }
-
   .xl\:w-60 {
     width: 15rem;
+  }
+
+  .xl\:w-1\/6 {
+    width: 16.666667%;
   }
 
   .xl\:flex-grow {

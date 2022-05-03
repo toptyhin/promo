@@ -1,5 +1,5 @@
 
-const colors = require('tailwindcss/colors')
+// const colors = require('tailwindcss/colors')
 
 module.exports = {
   mode: 'jit',
@@ -14,10 +14,10 @@ module.exports = {
       },
     },    
     extend: {
-      colors: {
-        sky: colors.sky,
-        cyan: colors.cyan,
-      },
+      // colors: {
+      //   sky: colors.sky,
+      //   cyan: colors.cyan,
+      // },
     },
   },
   variants: {},
